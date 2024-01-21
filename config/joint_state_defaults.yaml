@@ -1,0 +1,21 @@
+three_dof_planar_manipulator:
+  # Publish joint states
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers
+  shoulder_joint_controller:
+    type: position_controllers/JointPositionController
+    joint: shoulder_joint
+    pid: {p: 1.0, i: 0.1, d: 0.01}
+
+  elbow_joint_controller:
+    type: position_controllers/JointPositionController
+    joint: elbow_joint
+    pid: {p: 1.0, i: 0.1, d: 0.01}
+
+  wrist_joint_controller:
+    type: position_controllers/JointPositionController
+    joint: wrist_joint
+    pid: {p: 1.0, i: 0.1, d: 0.01}
