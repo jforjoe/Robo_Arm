@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: test_pkg
+    relative_path: urdf/test_2_gazebo.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/three_dof_planar_manipulator.srdf
+  CONFIG:
+    author_name: Joel
+    author_email: joelsiby.25ec@licet.ac.in
+    generated_timestamp: 1706167845

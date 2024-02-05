@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
     
-    <param name="robot_description" textfile="$(find test_pkg)/urdf/test.urdf"/>
+    <param name="robot_description" textfile="$(find test_pkg)/urdf/test_2_gazebo.urdf"/>
     <arg name="rviz_config_file" default="$(find test_pkg)/config/test.rviz"/>
    
    
